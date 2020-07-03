@@ -11,6 +11,10 @@
 
 <body>
 
+    <?php
+         echo "the folder was empty !";
+    ?>
+
 </body>
 
 </html>
