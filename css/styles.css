@@ -1,0 +1,15 @@
+body{
+    background-image: url(../imagenes/SITIO-EN-CONSTRUCCION.jpg);
+    background-repeat: no-repeat;
+    background-size: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+
+@media (max-width: 663px)
+{
+    body{
+        background-size: 90%;
+    }
+}
