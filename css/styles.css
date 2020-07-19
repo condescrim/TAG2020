@@ -28,6 +28,13 @@ header{
     text-align: center;
 } 
 
+.nav-link{
+	transition: all 0.3s;
+}
+.nav-link:hover{
+	color:#2098D1!important;
+}
+
 
 /*iconos de redes sociales*/
 
@@ -132,3 +139,4 @@ footer{
 		background-color: rgb(255, 255, 255);
 	}
 }
+
