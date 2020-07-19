@@ -6,12 +6,19 @@
     background-position: center;
 } */
 
+header{
+	position:fixed;
+	width: 100%;
+	z-index: 2;
+}
+
 .banda-colores{
 	background-image: url(../Imagenes/bandaColores.png);
 	background-repeat: no-repeat;
 	background-size: 100%;
 	min-height: 45px;
 }
+
 .nav-icon{
     display: block!important;
     font-size: 2rem;
@@ -20,6 +27,7 @@
 .nav-item a{
     text-align: center;
 } 
+
 
 /*iconos de redes sociales*/
 
@@ -121,5 +129,6 @@ footer{
 		background-repeat: no-repeat;
 		background-size: 100%;
 		min-height: 25px;
+		background-color: rgb(255, 255, 255);
 	}
 }
