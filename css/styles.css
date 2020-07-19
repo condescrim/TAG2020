@@ -82,6 +82,10 @@ footer{
 	margin-bottom: 0;
 }
 
+.hvr-underline-from-center{
+	display: block!important;
+}
+
 @media (max-width: 663px)
 {
     body{
