@@ -6,7 +6,12 @@
     background-position: center;
 } */
 
+.banda-colores{
+	background-image: url(../Imagenes/bandaColores.png);
+	background-size: 1920px;
+	height: 45px;
 
+}
 .nav-icon{
     display: block!important;
     font-size: 2rem;
@@ -15,6 +20,7 @@
 .nav-item a{
     text-align: center;
 } 
+
 
 /*iconos de redes sociales*/
 
@@ -78,7 +84,7 @@
 	font-family: 'Lobster', cursive;
 	text-align: center;
 	color: #00aeef;
-	margin: 15px auto;
+	margin: 50px auto;
 	font-size: 2rem;
 }
 
