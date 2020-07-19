@@ -1,10 +1,10 @@
-body{
+/* body{
     background-image: url(../imagenes/SITIO-EN-CONSTRUCCION.jpg);
     background-repeat: no-repeat;
     background-size: 100vh;
     background-attachment: fixed;
     background-position: center;
-}
+} */
 
 
 .nav-icon{
@@ -74,6 +74,13 @@ body{
 
 /*iconos de redes sociales*/
 
+.text-title{
+	font-family: 'Lobster', cursive;
+	text-align: center;
+	color: #00aeef;
+	margin: 15px auto;
+	font-size: 2rem;
+}
 
 #mapid { 
 	margin: 0 auto;
