@@ -75,7 +75,10 @@ body{
 /*iconos de redes sociales*/
 
 
-#mapid { height: 180px; }
+#mapid { 
+	height: 180px; 
+	max-width: 100%;
+}
 
 footer{
 	text-align: center;
