@@ -76,8 +76,9 @@ body{
 
 
 #mapid { 
-	height: 180px; 
-	max-width: 100%;
+	margin: 0 auto;
+	height: 300px; 
+	max-width: 80%;
 }
 
 footer{
@@ -94,6 +95,11 @@ footer{
 
 @media (max-width: 663px)
 {
+	#mapid { 
+		height: 180px; 
+		max-width: 60%;
+	}
+	
     body{
         background-size: 90%;
     }
