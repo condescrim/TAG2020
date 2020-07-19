@@ -1,10 +1,10 @@
-/*body{
+body{
     background-image: url(../imagenes/SITIO-EN-CONSTRUCCION.jpg);
     background-repeat: no-repeat;
     background-size: 100vh;
     background-attachment: fixed;
     background-position: center;
-}*/
+}
 
 
 .nav-icon{
@@ -73,6 +73,9 @@
 }
 
 /*iconos de redes sociales*/
+
+
+#mapid { height: 180px; }
 
 footer{
 	text-align: center;

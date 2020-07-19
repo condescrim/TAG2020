@@ -13,6 +13,19 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css">
     <link href="css/hover.css" rel="stylesheet" media="all">
+
+    <!--map-->
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+        integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+        crossorigin="" />
+
+    <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+        integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+        crossorigin=""></script>
+
+    <!--map-->
+
 </head>
 
 <body>
@@ -26,9 +39,8 @@
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active hvr-underline-from-center">
-                        <a class="nav-link" href="#"> <i class="fas fa-home nav-icon"></i>Inicio <span
-                                class="sr-only">(current)</span></a>
+                    <li class="nav-item hvr-underline-from-center">
+                        <a class="nav-link" href="index.html"> <i class="fas fa-home nav-icon"></i>Inicio </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Link</a>
@@ -41,12 +53,15 @@
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <a class="dropdown-item" href="#">En Crudo</a>
                             <a class="dropdown-item" href="#">Pintado</a>
-                            <a class="dropdown-item" href="#">Cuadros</a>
+                            <a class="dropdown-item" href="#">Marqueteria</a>
                         </div>
                     </li>
 
-                    <li class="nav-item hvr-underline-from-center">
-                        <a class="nav-link" href="#"><i class="fas fa-address-book nav-icon"></i> &nbsp; Contacto</a>
+                    <li class="nav-item hvr-underline-from-center active">
+                        <a class="nav-link" href="contacto.html"><i class="fas fa-address-book nav-icon">
+                                <span class="sr-only">(current)</span>
+                            </i> &nbsp; Contacto
+                        </a>
                     </li>
 
                 </ul>
@@ -56,6 +71,9 @@
     </header>
 
 
+
+
+    <div id="mapid" style="width: 600px; height: 400px;"></div>
 
 
 
@@ -118,6 +136,10 @@
         integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
         crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/17c904e2bb.js" crossorigin="anonymous"></script>
+
+    <script src="js/script.js"></script>
+
+
 
 </body>
 
