@@ -12,7 +12,9 @@
     font-size: 2rem;
     text-align: center;
 }
-
+.nav-item a{
+    text-align: center;
+} 
 
 /*iconos de redes sociales*/
 
@@ -70,6 +72,15 @@
 	background-color: #343a40;
 }
 
+/*iconos de redes sociales*/
+
+footer{
+	text-align: center;
+	margin-top: 100vh;
+	height: 100%;
+	padding-top: 15px;
+	margin-bottom: 0;
+}
 
 @media (max-width: 663px)
 {
