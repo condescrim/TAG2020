@@ -6,6 +6,13 @@
     background-position: center;
 } */
 
+:root{
+	--fecebookColor:#3b5998;
+	--youtubeColor:#c4302b;
+	--whatsappColor:#25D366;
+}
+
+
 header{
 	position:fixed;
 	width: 100%;
@@ -39,7 +46,6 @@ header{
 /*iconos de redes sociales*/
 
 .icon-button {
-	background-color: white;
 	border-radius: 3.6rem;
 	cursor: pointer;
 	display: inline-block;
@@ -92,7 +98,46 @@ header{
 	background-color: #343a40;
 }
 
-/*iconos de redes sociales*/
+/*facebook icon*/
+.icon-button .icon-facebook {
+	color: var(--fecebookColor);
+}
+.icon-button:hover .icon-facebook{
+	color: white;
+}
+.blue-circulo span{
+	background-color: var(--fecebookColor);
+}
+
+/*youtube icon*/
+
+.icon-button .icon-youtube {
+	color: var(--youtubeColor);
+}
+.icon-button:hover .icon-youtube{
+	color: white;
+}
+.red-circulo span{
+	background-color: var(--youtubeColor);
+}
+
+
+/*whatsapp icon*/
+
+.icon-button .icon-whatsapp {
+	color: var(--whatsappColor);
+}
+.icon-button:hover .icon-whatsapp{
+	color: white;
+}
+.green-circulo span{
+	background-color: var(--whatsappColor);
+}
+
+
+
+
+/*fin iconos de redes sociales*/
 
 .text-title{
 	font-family: 'Lobster', cursive;
