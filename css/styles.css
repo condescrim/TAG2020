@@ -13,7 +13,6 @@
 	--titlesColor:#00aeef;
 }
 
-
 header{
 	position:fixed;
 	width: 100%;
@@ -30,7 +29,7 @@ header{
 .nav-icon{
     display: block!important;
     font-size: 2rem;
-    text-align: center;
+	text-align: center;
 }
 .nav-item a{
     text-align: center;
@@ -42,7 +41,24 @@ header{
 .nav-link:hover{
 	color:#2098D1!important;
 }
+.navbar-nav{
+	width: 100%!important;
+}
+.flex-navbar{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	margin-left: 100px;
+	margin-right:100px;
+}
+.divisor{
+	border-left: 1px solid lightgrey;
+	height: 40px;
+	margin: auto 0;
+	
+}
 
+/*banner*/
 .bannerImagen{
 	background-attachment: fixed;
 	height: auto;
@@ -65,6 +81,7 @@ header{
 .bannerImagen {
 	overflow:hidden;
 }
+/* fin banner*/
 
 
 /*iconos de redes sociales*/
@@ -112,6 +129,7 @@ header{
 	z-index: 1;
 }
 
+/*telefono icono*/
 .icon-button .icon-negro {
 	color: #343a40;
 }
@@ -169,6 +187,7 @@ header{
 }
 
 .text-brand{
+	margin-top: 20px;
 	font-family: 'Lobster', cursive;
 	color: var(--titlesColor);
 }
