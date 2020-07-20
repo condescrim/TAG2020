@@ -52,6 +52,20 @@ header{
 	height: auto;
   }
 
+  @keyframes zoomauto{
+	  from{transform: none;}
+	  50% {transform:scale(1.3)}
+	  to{ transform: none; }
+
+  }
+.bannerImagen .imagenbanner {
+	animation: zoomauto 60s infinite;
+	transform-origin: center;
+}
+.bannerImagen {
+	overflow:hidden;
+}
+
 
 /*iconos de redes sociales*/
 
