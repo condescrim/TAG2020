@@ -45,7 +45,7 @@ header{
 
 .bannerImagen{
 	background-attachment: fixed;
-	max-width: 90%;
+	max-width: 100%;
 	margin: auto;
 	height: 70vh;
 	background-image: linear-gradient(
