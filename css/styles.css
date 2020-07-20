@@ -45,15 +45,11 @@ header{
 
 .bannerImagen{
 	background-attachment: fixed;
-	max-width: 100%;
-	margin: auto;
-	height: 70vh;
-	background-image: linear-gradient(
-		rgba(100, 100, 100, 0),
-		rgba(111, 111, 111, 0)   ),url(../Imagenes/template.png);
-	background-repeat: no-repeat;
-	background-size: 100%;
-	background-position: center 1vh; 
+	height: auto;
+  }
+  .imagenbanner{
+	width: 100%;
+	height: auto;
   }
 
 
@@ -201,24 +197,6 @@ footer{
 	}
 }
 
-@media (min-width: 990px)
-{
-	.bannerImagen{
-		 background-position: 50% 10vh; 
-	  }
-}
-@media (min-width: 1261px)
-{
-	.bannerImagen{
-		background-position: 50% 5vh; 
-	}
-}
-@media (min-width: 1400px)
-{
-	.bannerImagen{
-		display: none; 
-	}
-}
 
 
 
