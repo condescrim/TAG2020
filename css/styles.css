@@ -10,6 +10,7 @@
 	--fecebookColor:#3b5998;
 	--youtubeColor:#c4302b;
 	--whatsappColor:#25D366;
+	--titlesColor:#00aeef;
 }
 
 
@@ -41,6 +42,20 @@ header{
 .nav-link:hover{
 	color:#2098D1!important;
 }
+
+.bannerImagen{
+	max-width: 100%;
+	height: 50vh;
+	font-size: 1.3rem;
+	background-image: linear-gradient(
+		rgba(100, 100, 100, 0.5),
+		rgba(111, 111, 111, 0.6)   ),url(../Imagenes/portada.jpg);
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-size: 100% 90%;
+  }
 
 
 /*iconos de redes sociales*/
@@ -134,17 +149,19 @@ header{
 	background-color: var(--whatsappColor);
 }
 
-
-
-
 /*fin iconos de redes sociales*/
 
 .text-title{
 	font-family: 'Lobster', cursive;
 	text-align: center;
-	color: #00aeef;
+	color: var(--titlesColor);
 	margin: 50px auto;
 	font-size: 2rem;
+}
+
+.text-brand{
+	font-family: 'Lobster', cursive;
+	color: var(--titlesColor);
 }
 
 #mapid { 
