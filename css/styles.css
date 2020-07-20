@@ -45,16 +45,19 @@ header{
 
 .bannerImagen{
 	max-width: 100%;
-	height: 50vh;
-	font-size: 1.3rem;
+	height: 70vh;
 	background-image: linear-gradient(
-		rgba(100, 100, 100, 0.5),
-		rgba(111, 111, 111, 0.6)   ),url(../Imagenes/portada.jpg);
-	background-attachment: fixed;
-	background-position: center;
+		rgba(100, 100, 100, 0),
+		rgba(111, 111, 111, 0)   ),url(../Imagenes/template.png);
+	/* background-attachment: fixed; */
+	/* background-position: center; */
+	/* background-repeat: no-repeat; */
+	/* background-size: cover; */
+	/* background-size: 85% 85%; */
+	background-position: center center;
+	
 	background-repeat: no-repeat;
 	background-size: cover;
-	background-size: 100% 90%;
   }
 
 
@@ -200,5 +203,35 @@ footer{
 		min-height: 25px;
 		background-color: rgb(255, 255, 255);
 	}
+
+
+	
 }
 
+/* @media (max-width: 991px)
+{
+.bannerImagen{
+	background-position-y: 60px;
+	background-size:80% 70%;
+
+  }
+}
+
+@media (max-width: 874px)
+{
+.bannerImagen{
+	background-position-y: 60px;
+	background-size:100% 70%;
+  }
+}
+
+@media (max-width: 630px)
+{
+.bannerImagen{
+	
+  
+	 
+	
+}
+}
+ */
