@@ -313,7 +313,7 @@ footer{
 	.card{
 		width: 100%!important;
 		height: auto!important;
-		margin-top: 80px;
+		margin: 80px auto;
 	}
 }
 
