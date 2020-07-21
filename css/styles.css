@@ -67,12 +67,11 @@ header{
 	align-items: center;
 	position: relative;
 	height: 100px;
-	width: 130px;
+	width: 115px;
 	left: 52.5%;
 	position: absolute;
 	top: -5px;
 	transform: translateX(-78%);
-	transition:all 0.2s ease;	
 }
 
 .logoindex{	
@@ -83,8 +82,7 @@ header{
 	left: 52.5%;
 	position: absolute;
 	top: -5px;
-	transform: translateX(-78%);
-	transition:all 0.2s ease;	
+	transform: translateX(-78%);	
 }
 
 .logoImage:hover  {
