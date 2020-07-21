@@ -6,6 +6,8 @@
     background-position: center;
 } */
 
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@0,400;1,600&display=swap');
+
 :root{
 	--fecebookColor:#3b5998;
 	--youtubeColor:#c4302b;
@@ -121,6 +123,28 @@ header{
 	margin-top: 50px;
 	text-align: justify;
 }
+
+/*cards*/
+
+.card{
+	width: 80%!important;
+	height: 400px!important;
+	margin-top: 50px;
+	transition:all .6s;
+	text-align: center;
+  }
+  .card:hover{
+	  padding:  10px 10px 10px 10px;
+	  border: #343a40 20px solid;
+  }
+  .card a{
+	text-decoration: none!important;
+	color: black!important;
+	font-weight: bold;
+	font-family: 'Josefin Slab', serif;
+	
+  }
+
 
 
 /*iconos de redes sociales*/
