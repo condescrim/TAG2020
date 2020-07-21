@@ -43,18 +43,53 @@ header{
 }
 .navbar-nav{
 	width: 100%!important;
+	margin: 0!important;
+	padding: 0!important;
 }
 .flex-navbar{
 	width: 100%;
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-around;
 	margin-left: 100px;
 	margin-right:100px;
 }
 .divisor{
 	border-left: 1px solid lightgrey;
 	height: 40px;
-	margin: auto 0;	
+	margin: auto;
+	
+}
+.navbar-collapse{
+	margin-left: 4rem!important;
+}
+
+.logoothers{	
+	align-items: center;
+	position: relative;
+	height: 100px;
+	width: 130px;
+	left: 52.5%;
+	position: absolute;
+	top: -5px;
+	transform: translateX(-78%);
+	transition:all 0.2s ease;	
+}
+
+.logoindex{	
+	align-items: center;
+	position: relative;
+	height: 100%;
+	width: 10%;
+	left: 52.5%;
+	position: absolute;
+	top: -5px;
+	transform: translateX(-78%);
+	transition:all 0.2s ease;	
+}
+
+.logoImage:hover  {
+	-webkit-filter: drop-shadow(0 0 20px rgba(100,100,100,0.26));
+	filter: drop-shadow(0 0 20px rgba(100,100,100,0.26));
 }
 
 /*banner*/
@@ -74,7 +109,7 @@ header{
 
   }
 .bannerImagen .imagenbanner {
-	animation: zoomauto 60s infinite;
+	animation: zoomauto 50s infinite;
 	transform-origin: center;
 }
 .bannerImagen {
@@ -230,20 +265,21 @@ footer{
 }
 
 
-@media (max-width: 992px)
+@media (max-width: 991px)
 {
 	.flex-navbar{
-		width: 20%;
-		display: flex;
+		display: block;
 		flex-direction: column;
-		position: absolute;
-		background-color: rgb(255, 255, 255);
+		margin-left: -32px!important;
 	}
 	.divisor{
 		display: none;
-		border-left: 1px solid lightgrey;
-		height: 40px;
-		margin: auto 0;	
+	}
+	.logoindex{	
+		display: none;
+	}
+	.logoothers{	
+		display: none;
 	}
 }
 
