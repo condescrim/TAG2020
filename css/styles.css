@@ -141,8 +141,11 @@ header{
 	text-decoration: none!important;
 	color: black!important;
 	font-weight: bold;
+  }
+  .card-text{
 	font-family: 'Josefin Slab', serif;
-	
+	font-size: 1.5rem;
+	font-weight: bold;
   }
 
 
