@@ -310,6 +310,11 @@ footer{
 	.logoothers{	
 		display: none;
 	}
+	.card{
+		width: 100%!important;
+		height: auto!important;
+		margin-top: 80px;
+	}
 }
 
 
