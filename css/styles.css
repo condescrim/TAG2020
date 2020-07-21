@@ -130,12 +130,12 @@ header{
 	width: 80%!important;
 	height: 400px!important;
 	margin-top: 50px;
-	transition:all .6s;
+	transition:all 1s;
 	text-align: center;
   }
   .card:hover{
-	  padding:  10px 10px 10px 10px;
-	  border: #343a40 20px solid;
+	padding:  10px 10px 10px 10px;
+	border: #343a40 20px solid; 
   }
   .card a{
 	text-decoration: none!important;
@@ -148,7 +148,10 @@ header{
 	font-weight: bold;
   }
 
-
+  .card img{
+	 height: 85%;
+	 object-fit: cover fill;
+  }
 
 /*iconos de redes sociales*/
 
