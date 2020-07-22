@@ -3,7 +3,7 @@ $(document).ready(function () {
 
     // var folder = "/TAG2020/Imagenes/Crudo/";
 
-    var folder = "/../Imagenes/Crudo/";
+    var folder = "https://github.com/condescrim/TAG2020/tree/master/Imagenes/Crudo/";
 
 
     // //-------------------------------------------
