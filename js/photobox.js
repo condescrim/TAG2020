@@ -350,10 +350,10 @@
 
             $doc.off("keydown.photobox")[fn]({ "keydown.photobox": keyDown });
 
-            if (isTouchDevice) {
-                overlay.removeClass('hasArrows'); // no need for Arrows on touch-enabled
-                wrapper[fn]('swipe', onSwipe);
-            }
+            // if (isTouchDevice) {
+            //     overlay.removeClass('hasArrows'); // no need for Arrows on touch-enabled
+            //     wrapper[fn]('swipe', onSwipe);
+            // }
 
             if (options.zoomable) {
                 overlay[fn]({ "mousewheel.photobox": $.proxy(this.events.callbacks.onScrollZoom, this) });
