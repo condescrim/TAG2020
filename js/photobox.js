@@ -41,7 +41,7 @@
             thumbAttr: 'data-src',   // Attribute to get the image for the thumbnail from
             captionTmpl: '<div class="title">{title}</div><div class="counter">({currentImageIdx}/{totalImagesCount})</div>',
             autoplay: false,        // should autoplay on first time or not
-            time: 5000,         // autoplay interval, in miliseconds (less than 1000 will hide the autoplay button)
+            time: 3000,         // autoplay interval, in miliseconds (less than 1000 will hide the autoplay button)
             history: false,        // should use history hashing if possible (HTML5 API)
             hideFlash: true,         // Hides flash elements on the page when photobox is activated. NOTE: flash elements must have wmode parameter set to "opaque" or "transparent" if this is set to false
             zoomable: true,         // disable/enable mousewheel image zooming
@@ -686,7 +686,7 @@
             APControl.autoPlayTimer = setTimeout(function () { changeImage(nextImage) }, options.time);
             APControl.progress.start();
             autoplayBtn.removeClass('play');
-            APControl.setTitle('Haga clic para detener la reproducción automática');
+            APControl.setTitle('Click to stop autoplay');
             options.autoplay = true;
         },
         pause: function () {
