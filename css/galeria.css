@@ -21,11 +21,24 @@
 			/* #gallery li.loaded:hover img{ transform:scale(1.2); -webkit-transform:scale(1.2); } */
             /* #gallery li.loaded.video:hover::before{ opacity:0; } */
             
+
+
+
+
+
+
+#gallery li.loaded:hover img{ 
+    transform:scale(1.1); -webkit-transform:scale(1.1);
+}
+#gallery li{
+
+        list-style:none;
+}
 .grid-gallery{
     display: grid;
-     grid-template-columns: 16.6% 16.6% 16.6% 16.6% 16.6% 16.6%;
-    
-    grid-row-gap: 20px;
+     /* grid-template-columns: 16.6% 16.6% 16.6% 16.6% 16.6% 16.6%; */
+     grid-column-gap: 20px; 
+  grid-row-gap: 20px;
   justify-self: center;
   align-self: center;
   justify-items: center;
@@ -40,50 +53,74 @@
      transition:.3s ease-out; 
     -webkit-transition:0.3s ease-out; 
 }
-#gallery li.loaded:hover img{ 
-    transform:scale(1.1); -webkit-transform:scale(1.1);
-}
-#gallery li{
 
-        list-style:none;
-}
-
-
-
-
-
-
-@media (max-width: 800px)
+@media (min-width: 1024px)
 {
-
     .grid-gallery{
-        grid-column-gap: 30px;
-        grid-template-columns: 45% 45% ;
+        grid-template-columns: 13.5% 13.5%  13.5%  13.5%  13.5% ;
+        grid-column-gap: 70px;
     }
     #gallery a img{ 
    
-        width:200px;
+        width:180px;
         height: 180px;
-         transition:.3s ease-out; 
-        -webkit-transition:0.3s ease-out; 
     }
 }
 
 
-
-@media (max-width: 360px)
+@media (max-width: 1024px)
 {
-
     .grid-gallery{
-        grid-template-columns: 100% ;
-      
+        grid-template-columns: 16.6% 16.6% 16.6% 16.6% ;
+        grid-column-gap: 70px;
     }
     #gallery a img{ 
    
-        width:100%;
-        height: 30%;
-         transition:.3s ease-out; 
-        -webkit-transition:0.3s ease-out; 
-    }
+        width:165px;
+        height: 180px;
 
+    }
 }
+
+
+@media (max-width: 900px)
+{
+    .grid-gallery{
+        grid-template-columns: 25% 25% 25%;
+    }
+    #gallery a img{ 
+        width:200px;
+        height: 200px;
+    }
+}
+
+@media (max-width: 768px)
+{
+    .grid-gallery{
+        grid-template-columns: 40% 40%;
+    }
+    #gallery a img{ 
+        width:250px;
+        height: 250px;
+    }
+}
+
+@media (max-width: 544px)
+{
+    .grid-gallery{
+        grid-template-columns: 100%;
+    }
+    #gallery a img{ 
+   
+        width:90%;
+        height: 30%;
+
+    }
+}
+
+
+
+
+
+
+
