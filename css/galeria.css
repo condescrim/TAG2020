@@ -49,19 +49,29 @@
 }
 
 
+
+
+
+
 @media (max-width: 800px)
 {
 
     .grid-gallery{
-        
-        grid-template-columns: 33% 33% 33% 33% ;
-        
-    
+        grid-column-gap: 30px;
+        grid-template-columns: 45% 45% ;
     }
-
+    #gallery a img{ 
+   
+        width:200px;
+        height: 180px;
+         transition:.3s ease-out; 
+        -webkit-transition:0.3s ease-out; 
+    }
 }
 
-@media (max-width: 320px)
+
+
+@media (max-width: 360px)
 {
 
     .grid-gallery{
