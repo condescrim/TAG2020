@@ -1,9 +1,9 @@
 
 $(document).ready(function () {
 
-    // var folder = "/TAG2020/Imagenes/Crudo/";
+    var folder = "/TAG2020/Imagenes/Crudo/";
 
-    var folder = "https://github.com/condescrim/TAG2020/tree/master/Imagenes/Crudo/";
+    //var folder = "https://github.com/condescrim/TAG2020/tree/master/Imagenes/Crudo/";
 
 
     // //-------------------------------------------
@@ -13,38 +13,34 @@ $(document).ready(function () {
     !(function () {
         'use strict';
 
-        var numOfImages = window.location.search ? parseInt(window.location.search.match(/\d+$/)[0]) : 70,
-            gallery = $('#gallery');
+        // var numOfImages = window.location.search ? parseInt(window.location.search.match(/\d+$/)[0]) : 70,
+        //     gallery = $('#gallery');
 
 
 
         // Get some photos from Flickr for the demo
 
-        $.ajax({
-            url: folder,
-            success: function (data) {
-                $(data).find("a").attr("href", function (i, val) {
-                    if (val.match(/\.(jpe?g|png|gif)$/)) {
-                        $("#gallery").append("<li class='loaded'> <a href='" + ".." + val + "'> <img src='" + ".." + val + "'/></a></li>");
-                        console.log(val);
-                    }
-                });
-                // finally, initialize photobox on all retrieved images
-                $('#gallery').photobox('a', { thumbs: true }, callback);
-                // using setTimeout to make sure all images were in the DOM, before the history.load() function is looking them up to match the url hash
-                setTimeout(window._photobox.history.load, 1000);
-                function callback() {
-                    console.log('callback for loaded content:', this);
-                };
-            }
-        });
+        // $.ajax({
+        //     url: folder,
+        //     success: function (data) {
+        //         $(data).find("a").attr("href", function (i, val) {
+        //             if (val.match(/\.(jpe?g|png|gif)$/)) {
+        //                 $("#gallery").append("<li class='loaded'> <a href='" + ".." + val + "'> <img src='" + ".." + val + "'/></a></li>");
+        //                 console.log(val);
+        //             }
+        //         });
 
+        //     }
+        // });
 
-
-
-
+        // finally, initialize photobox on all retrieved images
+        $('#gallery').photobox('a', { thumbs: true }, callback);
+        // using setTimeout to make sure all images were in the DOM, before the history.load() function is looking them up to match the url hash
+        setTimeout(window._photobox.history.load, 1000);
+        function callback() {
+            console.log('callback for loaded content:', this);
+        };
     })();
-
 });
 
 
