@@ -38,7 +38,7 @@ $(document).ready(function () {
         // using setTimeout to make sure all images were in the DOM, before the history.load() function is looking them up to match the url hash
         setTimeout(window._photobox.history.load, 1000);
         function callback() {
-            console.log('callback for loaded content:', this);
+            // console.log('callback for loaded content:', this);
         };
     })();
 });
