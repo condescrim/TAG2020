@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Somos un taller de artesanías, trabajamos en madera country piezas pintadas o en crudo. Además, tenemos servicio de marquetería">
+    <meta name="keywords" content="Country, madera, artesanía, marquetería, marcos, arte, pintura">
+    <meta name="author" content="Adrián Medina Barrientos">
+
+    <link rel="icon" type="image/png" href="/imagenes/LogIcon/logo_size.png" />
+
+    <title>TAG</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="css/hover.css" rel="stylesheet" media="all">
+
+
+    <!--fonts-->
+
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <!--fonts-->
+
+    <!--map-->
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+        integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+        crossorigin="" />
+
+    <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+        integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+        crossorigin=""></script>
+
+    <!--map-->
+
+    <!--galeria-->
+    <link rel="stylesheet" href="css/photobox.css">
+    <link rel="stylesheet" href="css/galeria.css">
+    <!--galeria-->
+
+</head>
+
+<body>
+    <div class="banda-colores"></div>
+
+
+    <header class="sticky-top">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <div class="flex-navbar">
+                        <li class="nav-item active hvr-underline-from-center">
+                            <a class="nav-link" href="index.html"> <i class="fas fa-home nav-icon"></i>Inicio <span
+                                    class="sr-only">(current)</span></a>
+                        </li>
+                        <div class="divisor"></div>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <div class="divisor"></div>
+
+                        <li class="nav-item">
+                            <img src="Imagenes/LogIcon/logo.png" alt="" srcset="" class="logoothers">
+                        </li>
+
+
+                        <div class="divisor"></div>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle hvr-underline-from-center" href="#" id="navbarDropdown"
+                                role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-images nav-icon"></i> Galería
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">En Crudo</a>
+                                <a class="dropdown-item" href="#">Pintado</a>
+                                <a class="dropdown-item" href="#">Marqueteria</a>
+                            </div>
+                        </li>
+                        <div class="divisor"></div>
+                        <li class="nav-item hvr-underline-from-center">
+                            <a class="nav-link" href="contacto.html"><i class="fas fa-address-book nav-icon"></i>
+                                &nbsp;
+                                Contacto</a>
+                        </li>
+                    </div>
+                </ul>
+            </div>
+
+        </nav>
+
+    </header>
+
+
+
+
+    <div class="container">
+
+        <h1 class="text-title">Piezas en crudo</h1>
+        <ul id='gallery'></ul>
+
+
+
+    </div>
+
+
+
+
+    <!-- Footer -->
+    <footer class="page-footer font-small special-color-dark pt-4 bg-light">
+
+        <!-- Footer Elements -->
+        <ul class="list-unstyled list-inline text-center">
+            <li class="list-inline-item">
+                <a id="profile-link" href="https://www.facebook.com/tallerdeartesaniagermancr"
+                    class="icon-button blue-circulo" target="_blank">
+                    <i class="fab fa-lg fa-facebook icon-facebook"></i>
+                    <span></span>
+                </a>
+            </li>
+
+            <li class="list-inline-item">
+                <a id="profile-link" href="https://www.youtube.com/channel/UCREw-aFHLJeTag3JuG7Tp4Q"
+                    class="icon-button red-circulo" target="_blank">
+                    <i class="fab fa-lg fa-youtube icon-youtube"></i>
+                    <span></span>
+                </a>
+            </li>
+
+            <li class="list-inline-item">
+                <a id="profile-link" href="https://wa.me/50661895923" class="icon-button green-circulo" target="_blank">
+                    <i class="fab fa-lg fa-whatsapp icon-whatsapp"></i>
+                    <span></span>
+                </a>
+            </li>
+
+        </ul>
+        <!-- Social buttons -->
+
+        </div>
+        <!-- Footer Elements -->
+
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">© 2020 Copyright:
+            <a href="https://www.linkedin.com/in/adrian-medina-b-b076a7146/" target="_blank"> Adrián Medina
+                Barrientos</a>
+        </div>
+        <!-- Copyright -->
+
+    </footer>
+    <!-- Footer -->
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous">
+        </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/17c904e2bb.js" crossorigin="anonymous"></script>
+    <script src="js/galeria.js"></script>
+
+    <script src="js/photobox.js"></script>
+
+</body>
+
+
+</html>
