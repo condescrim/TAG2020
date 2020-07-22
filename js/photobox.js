@@ -351,7 +351,7 @@
             $doc.off("keydown.photobox")[fn]({ "keydown.photobox": keyDown });
 
             if (isTouchDevice) {
-                //overlay.removeClass('hasArrows'); // no need for Arrows on touch-enabled
+                overlay.removeClass('hasArrows'); // no need for Arrows on touch-enabled
                 wrapper[fn]('swipe', onSwipe);
             }
 
