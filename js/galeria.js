@@ -3,7 +3,7 @@ $(document).ready(function () {
 
     // var folder = "/TAG2020/Imagenes/Crudo/";
 
-    var folder = "/Imagenes/Crudo/";
+    var folder = "../Imagenes/Crudo/";
 
 
     // //-------------------------------------------
