@@ -40,7 +40,7 @@
             thumbs: true,         // Show gallery thumbnails below the presented photo
             thumbAttr: 'data-src',   // Attribute to get the image for the thumbnail from
             captionTmpl: '<div class="title">{title}</div><div class="counter">({currentImageIdx}/{totalImagesCount})</div>',
-            autoplay: false,        // should autoplay on first time or not
+            autoplay: true,        // should autoplay on first time or not
             time: 3000,         // autoplay interval, in miliseconds (less than 1000 will hide the autoplay button)
             history: false,        // should use history hashing if possible (HTML5 API)
             hideFlash: true,         // Hides flash elements on the page when photobox is activated. NOTE: flash elements must have wmode parameter set to "opaque" or "transparent" if this is set to false
@@ -70,8 +70,8 @@
                 $('<div class="pbProgress">')
             ),
             caption = $('<div id="pbCaption">').append(
-                '<label for="pbThumbsToggler" title="Show/hide thumbnails"></label>',
-                '<button title="Rotate right" class="rotateBtn">&#10227;</button>',
+                '<label for="pbThumbsToggler" title="Mostrar/Ocultar miniaturas"></label>',
+                '<button title="Girar" class="rotateBtn">&#10227;</button>',
                 captionText = $('<div class="pbCaptionText">'),
                 thumbs = $('<div>').addClass('pbThumbs')
             )
@@ -686,14 +686,14 @@
             APControl.autoPlayTimer = setTimeout(function () { changeImage(nextImage) }, options.time);
             APControl.progress.start();
             autoplayBtn.removeClass('play');
-            APControl.setTitle('Click to stop autoplay');
+            APControl.setTitle('Deter la reproducción automática ');
             options.autoplay = true;
         },
         pause: function () {
             clearTimeout(APControl.autoPlayTimer);
             APControl.progress.reset();
             autoplayBtn.addClass('play');
-            APControl.setTitle('Click to resume autoplay');
+            APControl.setTitle('Activar reproducción automática');
             options.autoplay = false;
         },
         progress: {
@@ -710,7 +710,7 @@
         // sets the button Title property
         setTitle: function (text) {
             if (text)
-                autoplayBtn.prop('title', text + ' (every ' + options.time / 1000 + ' seconds)');
+                autoplayBtn.prop('title', text);
         },
         // the button onClick handler
         toggle: function (e) {
