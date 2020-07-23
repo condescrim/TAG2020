@@ -40,7 +40,7 @@
             thumbs: true,         // Show gallery thumbnails below the presented photo
             thumbAttr: 'data-src',   // Attribute to get the image for the thumbnail from
             captionTmpl: '<div class="title">{title}</div><div class="counter">({currentImageIdx}/{totalImagesCount})</div>',
-            autoplay: true,        // should autoplay on first time or not
+            autoplay: false,        // should autoplay on first time or not
             time: 3000,         // autoplay interval, in miliseconds (less than 1000 will hide the autoplay button)
             history: false,        // should use history hashing if possible (HTML5 API)
             hideFlash: true,         // Hides flash elements on the page when photobox is activated. NOTE: flash elements must have wmode parameter set to "opaque" or "transparent" if this is set to false
